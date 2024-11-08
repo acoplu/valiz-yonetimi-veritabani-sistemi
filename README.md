@@ -1,4 +1,4 @@
-## Havalimanı Veritabanı Yönetim Sistemi
+## Valiz Yönetimi Veritabanı Sistemi
 "BİL 372 Veritabanı Sistemleri" dersi projesi.
 
 ### Grup Üyeleri:
