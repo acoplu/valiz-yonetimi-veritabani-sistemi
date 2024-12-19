@@ -1,0 +1,239 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th {
+  background-color: #333; /* Başlıkların arka plan rengini ayarlayın */
+  color: #fff; /* Yazı rengini beyaz yapın */
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #444; /* Sınır çizgilerini belirginleştirin */
+}
+
+.table td {
+  background-color: #444; /* Satırların arka plan rengini ayarlayın */
+  color: #ddd; /* Yazı rengini açık gri yapın */
+  padding: 10px;
+  border: 1px solid #555; /* Sınır çizgilerini ekleyin */
+}
+
+.table tr:nth-child(even) td {
+  background-color: #555; /* Çift satırları farklı renkle ayırın */
+}
+
+.table tr:hover td {
+  background-color: #666; /* Üzerine gelindiğinde satırın rengini değiştirin */
+}
+
+
+
+/* Uçuş listesinin düzenlenmesi için tablo stili */
+.ucus-table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #444;
+  color: #f0f0f0;
+}
+
+.ucus-table th, .ucus-table td {
+  border: 1px solid #666;
+  padding: 12px;
+  text-align: center;
+}
+
+.ucus-table th {
+  background-color: #222;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.ucus-table tr:nth-child(even) {
+  background-color: #555;
+}
+
+.ucus-table tr:hover {
+  background-color: #666;
+}
+.valiz-sayisi-table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #444;
+  color: #f0f0f0;
+}
+
+.valiz-sayisi-table th, .valiz-sayisi-table td {
+  border: 1px solid #666;
+  padding: 12px;
+  text-align: center; /* Yazıları ortalamak için ekledik */
+}
+
+.valiz-sayisi-table th {
+  background-color: #222;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.valiz-sayisi-table tr:nth-child(even) {
+  background-color: #555;
+}
+
+.valiz-sayisi-table tr:hover {
+  background-color: #666;
+}
+
+
+/* Form düzeni için elemanları dikey sıralama */
+.valiz-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: 300px; /* Formun minimum yüksekliğini belirleyerek yeterince yer bırak */
+}
+
+/* Form giriş kutularının stilleri */
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  outline: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Odaklanınca beyaza dönmesi için */
+input[type="text"]:focus,
+input[type="number"]:focus {
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
+}
+
+/* Label stilleri */
+label {
+  font-weight: bold;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Butonların stilini düzenleme */
+button {
+  padding: 12px 20px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 150px; /* Logonun boyutunu ayarlayın */
+  margin-bottom: 20px; /* Logo ile başlık arasına boşluk bırakın */
+}
+
+select {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  outline: none;
+  width: 100%;
+  max-width: 400px;
+  position: relative;  /* Select kutusunun konumunu belirle */
+  z-index: 1;  /* Seçeneklerin üstte gözükmesini sağla */
+}
+
+select:focus {
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
+  overflow: visible;  /* Kutunun açıldığında görünmesini sağla */
+}
+
+/* Valiz listesinin düzenlenmesi için tablo stili */
+.valiz-table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #444;
+  color: #f0f0f0;
+}
+
+.valiz-table th, .valiz-table td {
+  border: 1px solid #666;
+  padding: 12px;
+  text-align: center;
+}
+
+.valiz-table th {
+  background-color: #222;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.valiz-table tr:nth-child(even) {
+  background-color: #555;
+}
+
+.valiz-table tr:hover {
+  background-color: #666;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-header h1 {
+  font-size: 2.5rem;
+  color: #61dafb; /* Başlığın rengini belirleyin */
+  margin-bottom: 30px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
