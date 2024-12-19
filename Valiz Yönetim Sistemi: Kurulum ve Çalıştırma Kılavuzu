@@ -1,0 +1,78 @@
+1. Gereksinimler
+Projenin çalışabilmesi için aşağıdaki araçların yüklü olduğundan emin olun:
+
+Python: 3.12.7
+Node.js: v22.11.0
+npm: 10.9.0
+MySQL veya PostgreSQL (veritabanı için)
+
+----------------------------------------------------------------------------
+
+2. Backend Kurulumu ve Çalıştırma
+
+2.1) Backend Klasörüne Geçin
+cd backend
+
+----------------------------------------------------------------------------
+
+2.2) Sanal Ortam (Virtual Environment) Oluşturun
+
+Windows:
+python -m venv venv
+venv\Scripts\activate
+Linux/Mac:
+python3 -m venv venv
+source venv/bin/activate
+
+----------------------------------------------------------------------------
+
+2.3) Bağımlılıkları Kurun
+
+pip install -r requirements.txt
+
+----------------------------------------------------------------------------
+
+2.4)Veritabanı Ayarları
+
+PostgreSQL veritabanını başlatın ve şu bilgileri kullanarak study_372 adında bir veritabanı oluşturun:
+
+Veritabanı Adı: study_372
+Kullanıcı: postgres
+Şifre: 314314
+Host: localhost
+Port: 5432
+Not: Veritabanında bil372_project şemasının oluşturulmuş olduğundan emin olun.
+
+
+
+2.5) Veritabanını Migrasyon ile Oluşturun
+
+python manage.py migrate
+
+----------------------------------------------------------------------------
+
+2.6) Backend Uygulamasını Başlatın
+
+python app.py
+Backend şu adreste çalışır: http://127.0.0.1:5000
+
+----------------------------------------------------------------------------
+
+3. Frontend Kurulumu ve Çalıştırma
+
+3.1)Frontend Klasörüne Geçin
+
+cd ../valiz-yonetimi
+
+----------------------------------------------------------------------------
+
+3.2) Bağımlılıkları Kurun
+
+npm install
+
+----------------------------------------------------------------------------
+
+3.3)Frontend Uygulamasını Başlatın
+
+npm start
+Frontend şu adreste çalışır: http://localhost:3000
